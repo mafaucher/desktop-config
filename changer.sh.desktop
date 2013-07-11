@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Type=Application
+Exec=changer.sh
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name[en_CA]=Earth Wallpaper
+Name=Earth Wallpaper
+Comment[en_CA]=Changer for Earth Wallpaper
+Comment=Changer for Earth Wallpaper

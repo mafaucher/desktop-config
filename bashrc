@@ -82,12 +82,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias lla='ls -lA'
-alias l='ls -CF'
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -135,14 +129,17 @@ venv() {
 if [ -f ~/.bash_paths ]; then
 	. ~/.bash_paths
 fi
-
-# Additional configuration files
-if [ -f ~/.screenrc ]; then
-	. ~/.screenrc
-elif [ -f ~/.byoburc ]; then
-	. ~/.byoburc
+if [ -f ~/Public/.bash_paths ]; then
+ 	. ~/Public/.bash_paths
 fi
-
-if [ -f ~/.bin/merge_history.bash ]
-	. ~/.bin/merge_history.bash
-fi
+# 
+# # Additional configuration files
+# if [ -f ~/.screenrc ]; then
+# 	. ~/.screenrc
+# elif [ -f ~/.byoburc ]; then
+# 	. ~/.byoburc
+# fi
+# 
+# #if [ -f ~/.bin/merge_history.bash ]; then
+# #	source ~/.bin/merge_history.bash
+# #fi
