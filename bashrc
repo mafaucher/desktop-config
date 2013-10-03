@@ -140,6 +140,6 @@ fi
 # 	. ~/.byoburc
 # fi
 # 
-# #if [ -f ~/.bin/merge_history.bash ]; then
-# #	source ~/.bin/merge_history.bash
-# #fi
+if [ -f ~/.bin/merge_history.bash ]; then
+	source ~/.bin/merge_history.bash
+fi
