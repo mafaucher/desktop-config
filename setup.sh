@@ -18,11 +18,17 @@ ln bash_paths ~/.bash_paths
 cp -f merge_history.bash ~/.bin/
 touch ~/.merged_bash_history
 
-# screenrc
-if [ -f ~/.screenrc ]; then
-	rm ~/.screenrc
+# tmux
+if [ -f ~/.tmux.conf ]; then
+	rm ~/.tmux.conf
 fi
-ln screenrc ~/.screenrc
+ln tmux.conf ~/.tmux.conf
+
+# wget
+if [ -f ~/.wgetrc ]; then
+	rm ~/.wgetrc
+fi
+ln wgetrc ~/.wgetrc
 
 # vimrc
 if [ -f ~/.vimrc ]; then
