@@ -108,6 +108,11 @@ filetype plugin on
 set ofu=syntaxcomplete#Complete
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 
+" Markdown
+if has("autocmd")
+ autocmd BufRead,BufNewFile *.md,*.markdown set filetype=markdown
+endif
+
 " Java
 if has("autocmd")
  autocmd Filetype java setlocal omnifunc=javacomplete#Complete
