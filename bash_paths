@@ -1,5 +1,5 @@
 # set paths
-export PATH=".:/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/usr/games:/sbin:/bin:$HOME/.bin:$HOME/.local/bin"
+export PATH=".:/usr/local/sbin:/usr/local/bin:/usr/local/games:/usr/sbin:/usr/bin:/usr/games:/sbin:/bin:$HOME/.bin:$HOME/.local/bin:$HOME/Public/scripts"
 
 # LATEX
 export TEXMFHOME="$HOME/.texmf"
