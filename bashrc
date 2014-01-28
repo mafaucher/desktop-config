@@ -20,6 +20,9 @@ export PAGER="/usr/bin/less"
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+# enable option to make ** recursive
+shopt -s globstar
+
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
