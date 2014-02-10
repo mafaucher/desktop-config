@@ -24,6 +24,12 @@ if [ -f ~/.tmux.conf ]; then
 fi
 ln tmux.conf ~/.tmux.conf
 
+# gitignore
+if [ -f ~/.gitignore_global ]; then
+	rm ~/.gitignore_global
+fi
+ln gitignore_global ~/.gitignore_global
+
 # wget
 if [ -f ~/.wgetrc ]; then
 	rm ~/.wgetrc
